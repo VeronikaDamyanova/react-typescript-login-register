@@ -1,0 +1,17 @@
+@import "../../../../utils/variables";
+
+button.icon-btn {
+  width: fit-content;
+  background-color: $dark-1;
+  padding: 4px;
+  border-radius: 8px;
+  border: none;
+
+  i {
+    font-size: 24px;
+
+    &::before {
+      color: $text-normal;
+    }
+  }
+}

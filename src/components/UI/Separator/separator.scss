@@ -1,0 +1,9 @@
+@import "../../../utils/variables";
+
+.separator {
+  margin: 20px 0;
+  background: $dark-3;
+  height: 1px;
+  width: 100%;
+  border: none;
+}

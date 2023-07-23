@@ -1,0 +1,29 @@
+$base: #000000;
+$text-normal: #ffffff;
+$text-muted: #999999;
+$dark-1: #1a2d3f;
+$dark-2: #2c4965;
+$dark-3: #3b658c;
+$dark-primary: #0066ff;
+$danger: #ff5454;
+$success: #61e775;
+$primary-gradient: linear-gradient(90deg, $dark-primary 0%, #0029ff 100%);
+
+@mixin generate($prefix, $property) {
+    $spacing-list: 8px 16px 32px 48px;
+    $spacing-names: "xs" "s" "m" "l";
+
+    @each $spacing in $spacing-list {
+        $i: index($spacing-list, $spacing);
+        $spacing-name: nth($spacing-names, $i);
+
+        .#{$prefix}-#{$spacing-name} {
+            #{$property}: $spacing;
+        }
+    }
+}
+
+@include generate(mb, margin-bottom);
+@include generate(mt, margin-top);
+@include generate(ml, margin-left);
+@include generate(mr, margin-right);

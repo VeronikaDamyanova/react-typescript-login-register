@@ -1,0 +1,47 @@
+@import "../../utils/variables";
+
+.profile-wrapper {
+  .heading-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+
+    h1 {
+      margin-left: 16px;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 27px;
+    }
+  }
+
+  h2 {
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+  }
+
+  button.primary,
+  button.secondary {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .connected-accounts {
+    margin-bottom: 48px;
+    margin-top: 32px;
+
+    h2 {
+      margin-bottom: 24px;
+    }
+  }
+
+  .other {
+    margin-bottom: 48px;
+
+    h2 {
+      margin-bottom: 24px;
+    }
+  }
+}
+

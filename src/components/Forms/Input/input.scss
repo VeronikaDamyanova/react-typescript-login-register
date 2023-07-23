@@ -1,0 +1,77 @@
+@import "../../../utils/variables";
+
+
+label {
+  font-size: 13px;
+  line-height: 16px;
+  margin-bottom: 2px;
+  margin-left: 8px;
+}
+
+input:not(#checkbox) {
+  padding: 12px 8px;
+  background: $dark-1;
+  border: 1px solid $dark-2;
+  border-radius: 8px;
+  color: $text-normal;
+  display: block;
+  width: 100%;
+
+  &.invalid {
+    border-color: $danger;
+  }
+
+  &:focus {
+    outline: none !important;
+    background-color: $dark-3;
+  }
+
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus {
+    -webkit-text-fill-color: $text-normal;
+    -webkit-box-shadow: 0 0 0px 1000px $dark-1 inset;
+  }
+
+  /* Chrome, Safari, Edge, Opera */
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  &[type="number"] {
+    -moz-appearance: textfield;
+  }
+}
+
+.input-container {
+  position: relative;
+
+  .icon-wrapper {
+    position: absolute;
+    right: 10px;
+    top: 30px;
+  }
+  i {
+    cursor: pointer;
+    margin-left: 8px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &.fa-check::before {
+      color: $success;
+    }
+  }
+}
+
+.error {
+  color: $danger;
+  font-size: 10px;
+  line-height: 12px;
+  margin: 0;
+  margin-top: 2px;
+}

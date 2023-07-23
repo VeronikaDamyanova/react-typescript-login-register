@@ -1,0 +1,52 @@
+@import "../../../utils/variables";
+
+.terms-wrapper {
+  h1 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    margin-top: 60px;
+    margin-bottom: 42px;
+  } 
+
+  & > p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 20px;
+  }
+
+  ul {
+    list-style: none;
+
+    p{
+      margin-bottom: 0px;
+    }
+  }
+
+  ul li::before {
+    content: "- ";
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    a {
+      color: $dark-primary;
+      text-decoration: none;
+      font-weight: 700;
+
+      i{
+        margin-left: 10px;
+      }
+      }
+  }
+}
